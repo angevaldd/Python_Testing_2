@@ -23,7 +23,7 @@ clubs = loadClubs()
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html',clubs=clubs)
 
 @app.route('/showSummary',methods=['POST'])
 def showSummary():
@@ -46,7 +46,7 @@ def showSummary():
         return render_template('welcome.html',club=club,competitions=competitions_with_valid_date,competition_done=competitions_done)
     except IndexError:
         erreur = 1
-        return render_template('index.html',erreur=erreur)
+        return render_template('index.html',erreur=erreur,clubs=clubs)
 
     
       
