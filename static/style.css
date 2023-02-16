@@ -1,0 +1,16 @@
+.my-custom-background {
+    background-color: #DCDCDC; /* Remplacez cette valeur par la couleur que vous souhaitez */
+  }
+
+.h1 {
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Cette propriété est facultative et sert à centrer le texte verticalement */
+}
+form {
+  width: 50%;
+  margin: 0 auto;
+  /* ajoutez d'autres styles personnalisés ici si nécessaire */
+}
